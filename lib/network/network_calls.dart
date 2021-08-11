@@ -20,7 +20,7 @@ class Networkclass {
     if (response.statusCode == 200) {
       return QuizHelper.fromJson(jsonDecode(response.body));
     } else {
-      throw Exception('Failed to load album');
+      throw Exception('Failed to load data');
     }
   }
 
@@ -29,6 +29,8 @@ class Networkclass {
     final response = await http.get(filmUrl);
     if (response.statusCode == 200) {
       return QuizHelper.fromJson(jsonDecode(response.body));
+    }else {
+      throw Exception('Failed to load data');
     }
   }
 
@@ -37,6 +39,8 @@ class Networkclass {
     final response = await http.get(musicUrl);
     if (response.statusCode == 200) {
       return QuizHelper.fromJson(jsonDecode(response.body));
+    }else {
+      throw Exception('Failed to load data');
     }
   }
 
@@ -45,6 +49,8 @@ class Networkclass {
     final response = await http.get(mathUrl);
     if (response.statusCode == 200) {
       return QuizHelper.fromJson(jsonDecode(response.body));
+    }else {
+      throw Exception('Failed to load data');
     }
   }
 
@@ -53,6 +59,8 @@ class Networkclass {
     final response = await http.get(sportUrl);
     if (response.statusCode == 200) {
       return QuizHelper.fromJson(jsonDecode(response.body));
+    }else {
+      throw Exception('Failed to load data');
     }
   }
 }

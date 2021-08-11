@@ -1,6 +1,5 @@
 import 'dart:async';
 
-import 'package:concentric_transition/concentric_transition.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:myapp/nextpage.dart';
@@ -75,7 +74,7 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   void completed() {
-    Navigator.pushReplacement(context, ConcentricPageRoute(builder: (context) {
+    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
       return HomePage();
     }));
   }

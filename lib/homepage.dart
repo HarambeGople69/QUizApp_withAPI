@@ -1,6 +1,5 @@
 import 'dart:convert';
 
-import 'package:concentric_transition/page_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:myapp/models/api_response_model.dart';
