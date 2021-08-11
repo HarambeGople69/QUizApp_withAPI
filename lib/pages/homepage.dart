@@ -3,7 +3,6 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:myapp/models/api_response_model.dart';
-import 'package:myapp/nextpage.dart';
 import 'package:myapp/pages/quiz_play.dart';
 import 'package:myapp/widgets/our_button.dart';
 import 'package:myapp/widgets/our_sized_box.dart';
